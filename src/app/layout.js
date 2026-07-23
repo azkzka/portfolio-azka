@@ -35,6 +35,9 @@ export const metadata = {
     description: "Fullstack Developer yang membangun web experiences berkualitas tinggi.",
     type: "website",
   },
+  icons: {
+    icon: "/Avatar.png",
+  },
 };
 
 export default function RootLayout({ children }) {
