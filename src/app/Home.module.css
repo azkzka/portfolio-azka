@@ -337,7 +337,8 @@
   .heroImageMobile {
     display: block;
     position: absolute;
-    bottom: 370px;
+    top: 22vh;
+    bottom: auto;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
@@ -353,7 +354,8 @@
   .mobileBioCard {
     display: flex;
     position: absolute;
-    bottom: 80px;
+    top: 58vh;
+    bottom: auto;
     left: 24px;
     right: 24px;
     z-index: 30;
@@ -400,15 +402,18 @@
   }
 
   .centerTextWrap {
-    margin-top: -320px;
+    top: 15vh;
+    bottom: auto;
+    margin-top: 0;
+    height: auto;
   }
 
   .bornToText {
-    font-size: clamp(75px, 20vw, 115px);
+    font-size: clamp(85px, 22vw, 130px);
   }
 
   .typewriterWrap {
-    font-size: clamp(55px, 15vw, 95px);
+    font-size: clamp(40px, 10vw, 80px);
   }
 }
 
@@ -424,11 +429,20 @@
   }
 
   .heroImageMobile {
-    bottom: 350px;
+    top: 20vh;
+    bottom: auto;
   }
 
   .centerTextWrap {
-    margin-top: -300px;
+    top: 12vh;
+    bottom: auto;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .mobileBioCard {
+    top: 56vh;
+    bottom: auto;
   }
 
   .bornToText {
@@ -436,7 +450,7 @@
   }
 
   .typewriterWrap {
-    font-size: clamp(45px, 15vw, 80px);
+    font-size: clamp(28px, 9vw, 65px);
   }
 }
 
