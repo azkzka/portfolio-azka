@@ -1,0 +1,292 @@
+/* ===========================
+   DESIGN SYSTEM — Azka Fahsya Portfolio
+   =========================== */
+
+:root {
+  /* Color Tokens */
+  --color-accent: #F44A22;
+  --color-accent-light: #FEF8E8;
+  --color-surface-base: #000000;
+  --color-surface-light: #E4E2E3;
+  --color-surface-raised: #0a0a0a;
+  --color-surface-muted: #ffffff;
+  --color-text-primary: #171717;
+  --color-text-secondary: #ededed;
+  --color-text-tertiary: #F44A22;
+  --color-text-inverse: #a8aaac;
+  --color-border-default: #e5e7eb;
+
+  /* Typography */
+  --font-primary: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+  --font-display: 'Oswald', Arial, sans-serif;
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 16px;
+  --font-size-lg: 30px;
+  --font-size-xl: clamp(60px, 9vw, 122px);
+  --font-size-2xl: clamp(70px, 10vw, 138px);
+  --font-weight-base: 600;
+  --font-line-height-base: 24px;
+
+  /* Spacing */
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 10px rgba(244, 74, 34, 0.4);
+
+  /* Motion */
+  --motion-instant: 300ms;
+  --motion-fast: 500ms;
+  --motion-bounce: cubic-bezier(0.175, 0.885, 0.32, 2.2);
+  --motion-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===========================
+   RESET & BASE
+   =========================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-base);
+  line-height: var(--font-line-height-base);
+  color: var(--color-text-primary);
+  background: var(--color-surface-raised);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ===========================
+   TYPOGRAPHY UTILITIES
+   =========================== */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+/* ===========================
+   ANIMATIONS
+   =========================== */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes cursorBlink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes spinText {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes marqueeContact {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes columnSlide {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   SCROLLBAR
+   =========================== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-raised);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: var(--radius-full);
+}
+
+/* ===========================
+   SELECTION
+   =========================== */
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* ===========================
+   FOCUS VISIBLE
+   =========================== */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

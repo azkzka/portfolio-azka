@@ -1,0 +1,202 @@
+.projectsPage {
+  min-height: 100vh;
+  background: var(--color-surface-light);
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Page title */
+.pageTitle {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  z-index: 10;
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Cards container */
+.cardsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding: 130px 40px 60px;
+  min-height: 100vh;
+}
+
+/* Project card */
+.projectCard {
+  position: relative;
+  flex: 1;
+  max-width: 420px;
+  height: 75vh;
+  min-height: 500px;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all var(--motion-fast) var(--motion-smooth);
+}
+
+.projectCard:hover {
+  transform: scale(1.03) translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient backgrounds */
+.gradient1 {
+  background: linear-gradient(160deg, #F44A22 0%, #ff9a8b 30%, #c8c8c8 60%, #666 100%);
+}
+
+.gradient2 {
+  background: linear-gradient(160deg, #0ea5e9 0%, #06b6d4 30%, #22d3ee 60%, #0f172a 100%);
+}
+
+.gradient3 {
+  background: linear-gradient(160deg, #ec4899 0%, #a855f7 40%, #8b5cf6 70%, #1e1b4b 100%);
+}
+
+/* Card content */
+.cardContent {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+}
+
+.cardNumber {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(80px, 10vw, 120px);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1;
+  font-style: italic;
+  transition: all var(--motion-fast);
+}
+
+.projectCard:hover .cardNumber {
+  color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* Card details — visible on hover */
+.cardDetails {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--motion-fast) var(--motion-smooth);
+}
+
+.projectCard:hover .cardDetails {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 300px;
+}
+
+.cardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-full);
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-full);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all var(--motion-instant);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cardLink:hover {
+  background: white;
+  color: var(--color-text-primary);
+}
+
+/* Scalloped bottom */
+.scallop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 40px;
+    gap: 20px;
+  }
+
+  .projectCard {
+    max-width: 100%;
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .cardDetails {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+    height: 45vh;
+    min-height: 300px;
+  }
+
+  .pageTitle {
+    left: 20px;
+    top: 20px;
+    font-size: 18px;
+  }
+}

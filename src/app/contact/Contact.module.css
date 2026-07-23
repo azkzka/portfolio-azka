@@ -1,0 +1,342 @@
+.contactPage {
+  min-height: 100vh;
+  background: var(--color-surface-light);
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Page title */
+.pageTitle {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  z-index: 10;
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Big scrolling header */
+.contactMarquee {
+  padding-top: 40px;
+  margin-top: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.contactMarqueeTrack {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marqueeContact 15s linear infinite;
+  padding: 20px 0;
+}
+
+.contactMarqueeText {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(60px, 12vw, 140px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  opacity: 0.9;
+  letter-spacing: -0.02em;
+  padding-right: 60px;
+  flex-shrink: 0;
+}
+
+.contactMarqueeStar {
+  font-size: clamp(30px, 6vw, 60px);
+  color: var(--color-text-primary);
+  padding-right: 60px;
+  flex-shrink: 0;
+}
+
+/* Info bar */
+.infoBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.infoText {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.infoText:nth-child(1) {
+  text-align: left;
+}
+
+.infoText:nth-child(2) {
+  text-align: center;
+}
+
+.infoText:nth-child(3) {
+  text-align: right;
+}
+
+/* Stickers area */
+.stickersArea {
+  position: relative;
+  min-height: 55vh;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Social sticker pills */
+.stickerPill {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 34px;
+  background: var(--color-accent-light);
+  border: 2px solid var(--color-text-primary);
+  border-radius: var(--radius-full);
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-primary);
+  cursor: grab;
+  transition: background 0.15s;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  z-index: 5;
+}
+
+.stickerPill:hover {
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.12);
+  background: white;
+}
+
+.stickerPill:active {
+  cursor: grabbing;
+}
+
+.stickerArrow {
+  transition: transform var(--motion-instant);
+}
+
+.stickerPill:hover .stickerArrow {
+  transform: translate(2px, -2px);
+}
+
+/* Circular sticker */
+.circleSticker {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--color-accent-light);
+  border: 2px solid var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  user-select: none;
+  transition: background 0.15s;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+  overflow: hidden;
+}
+
+.circleSticker:hover {
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.circleInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleEmoji {
+  font-size: 28px;
+  z-index: 2;
+}
+
+.circleText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: spinText 10s linear infinite;
+  transform-origin: center;
+}
+
+.circleText text {
+  font-size: 8px;
+  font-weight: 800;
+  fill: var(--color-text-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Send message button */
+.sendButton {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 40px;
+  background: var(--color-accent);
+  color: white;
+  border: 2px solid var(--color-text-primary);
+  border-radius: var(--radius-full);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 20px rgba(244, 74, 34, 0.35);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  box-shadow: 0 8px 30px rgba(244, 74, 34, 0.5);
+}
+
+.sendButton:active {
+  box-shadow: 0 2px 10px rgba(244, 74, 34, 0.35);
+}
+
+/* Email Section */
+.emailSection {
+  text-align: center;
+  padding: 80px 20px 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.copyLabel {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.emailText {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(32px, 6vw, 90px);
+  color: var(--color-text-primary);
+  word-break: break-all;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.emailText:hover {
+  color: var(--color-accent);
+}
+
+.copyPopup {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(244, 74, 34, 0.3);
+  z-index: 20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .infoBar {
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .infoText:nth-child(1),
+  .infoText:nth-child(2),
+  .infoText:nth-child(3) {
+    text-align: center;
+  }
+
+  .stickersArea {
+    padding: 20px;
+    min-height: 60vh;
+  }
+
+  .stickerPill {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+
+  .circleSticker {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sendButton {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    font-size: 11px;
+  }
+
+  .pageTitle {
+    left: 20px;
+    top: 20px;
+    font-size: 22px;
+  }
+}
+
+@keyframes marqueeContact {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes spinText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
