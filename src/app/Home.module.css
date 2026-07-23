@@ -337,7 +337,7 @@
   .heroImageMobile {
     display: block;
     position: absolute;
-    bottom: 150px;
+    bottom: 240px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
@@ -400,15 +400,15 @@
   }
 
   .centerTextWrap {
-    margin-top: -120px;
+    margin-top: -180px;
   }
 
   .bornToText {
-    font-size: clamp(75px, 19vw, 120px);
+    font-size: clamp(85px, 22vw, 130px);
   }
 
   .typewriterWrap {
-    font-size: clamp(55px, 14vw, 100px);
+    font-size: clamp(65px, 17vw, 110px);
   }
 }
 
@@ -423,16 +423,20 @@
     font-size: 16px;
   }
 
+  .heroImageMobile {
+    bottom: 220px;
+  }
+
   .centerTextWrap {
-    margin-top: -100px;
+    margin-top: -160px;
   }
 
   .bornToText {
-    font-size: clamp(65px, 19vw, 95px);
+    font-size: clamp(75px, 22vw, 100px);
   }
 
   .typewriterWrap {
-    font-size: clamp(50px, 14vw, 80px);
+    font-size: clamp(55px, 17vw, 90px);
   }
 }
 
