@@ -25,10 +25,10 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata = {
-  title: "Portfolio Azka Fahsya",
+  title: "Portofolio Azka Fahsya",
   description:
-    "Portfolio of Azka Fahsya — Fullstack Developer yang membangun web experiences berkualitas tinggi. Creative code, web design, dan UI/UX innovation.",
-  keywords: ["fullstack developer", "web developer", "portfolio", "Azka Fahsya", "UI/UX", "creative code"],
+    "Portofolio of Azka Fahsya — Fullstack Developer yang membangun web experiences berkualitas tinggi. Creative code, web design, dan UI/UX innovation.",
+  keywords: ["fullstack developer", "web developer", "portofolio", "Azka Fahsya", "UI/UX", "creative code"],
   authors: [{ name: "Azka Fahsya" }],
   openGraph: {
     title: "Azka Fahsya — Fullstack Developer",

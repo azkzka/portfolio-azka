@@ -10,6 +10,7 @@ const PROJECTS = [
     desc: "An AI-powered browser extension that evaluates Shopee store reliability in real-time using XGBoost classification and SHAP explainability, integrated with a containerized Python backend",
     tags: ["Python", "XGBoost", "SHAP", 'Docker', "Chrome Extension"],
     gradient: "gradient1",
+    shape: "shape1",
     link: "https://chromewebstore.google.com/detail/mjomfkbmbkfhdchhndefacelbmacdhco?utm_source=item-share-cb",
   },
   {
@@ -18,14 +19,34 @@ const PROJECTS = [
     desc: "Interactive data visualization dashboard with real-time analytics, charts, and customizable widgets.",
     tags: ["React", "TypeScript", "D3.js", "Firebase"],
     gradient: "gradient2",
+    shape: "shape2",
     link: "#",
   },
   {
     number: "03",
-    title: "Creative Portfolio",
-    desc: "An immersive portfolio website with 3D animations, smooth transitions, and interactive elements.",
+    title: "Creative Portofolio",
+    desc: "An immersive portofolio website with 3D animations, smooth transitions, and interactive elements.",
     tags: ["Next.js", "Three.js", "GSAP", "Figma"],
     gradient: "gradient3",
+    shape: "shape3",
+    link: "#",
+  },
+  {
+    number: "04",
+    title: "E-Commerce Mobile App",
+    desc: "A sleek and responsive mobile application for seamless online shopping with integrated payment gateways.",
+    tags: ["React Native", "Node.js", "MongoDB", "Stripe"],
+    gradient: "gradient4",
+    shape: "shape4",
+    link: "#",
+  },
+  {
+    number: "05",
+    title: "AI Chat Assistant",
+    desc: "An intelligent conversational agent capable of context-aware interactions, powered by large language models.",
+    tags: ["OpenAI API", "Next.js", "Tailwind CSS", "Vercel"],
+    gradient: "gradient5",
+    shape: "shape5",
     link: "#",
   },
 ];
@@ -41,18 +62,11 @@ export default function ProjectsClient() {
         {PROJECTS.map((project, index) => (
           <motion.div
             key={project.number}
-            className={`${styles.projectCard} ${styles[project.gradient]}`}
+            className={`${styles.projectCard} ${styles[project.gradient]} ${styles[project.shape]}`}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 + index * 0.2, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
-            {/* Scalloped bottom */}
-            <svg className={styles.scallop} viewBox="0 0 400 60" preserveAspectRatio="none" style={{ height: "60px" }}>
-              <path
-                d="M0 60 L0 30 Q25 0 50 30 Q75 60 100 30 Q125 0 150 30 Q175 60 200 30 Q225 0 250 30 Q275 60 300 30 Q325 0 350 30 Q375 60 400 30 L400 60 Z"
-                fill="rgba(0,0,0,0.25)"
-              />
-            </svg>
 
             {/* Card content */}
             <div className={styles.cardContent}>

@@ -1,7 +1,7 @@
 import ProjectsClient from "./ProjectsClient";
 
 export const metadata = {
-  title: "Portfolio Azka Fahsya",
+  title: "Portofolio Azka Fahsya",
   description: "Explore projects by Azka Fahsya — modern web applications, creative designs, and fullstack development.",
 };
 

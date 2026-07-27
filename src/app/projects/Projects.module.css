@@ -37,7 +37,6 @@
   max-width: 420px;
   height: 75vh;
   min-height: 500px;
-  border-radius: 24px 24px 0 0;
   overflow: hidden;
   cursor: pointer;
   transition: all var(--motion-fast) var(--motion-smooth);
@@ -59,6 +58,31 @@
 
 .gradient3 {
   background: linear-gradient(160deg, #ec4899 0%, #a855f7 40%, #8b5cf6 70%, #1e1b4b 100%);
+}
+
+.gradient4 {
+  background: linear-gradient(160deg, #10b981 0%, #34d399 40%, #059669 70%, #064e3b 100%);
+}
+
+.gradient5 {
+  background: linear-gradient(160deg, #f59e0b 0%, #fbbf24 40%, #d97706 70%, #78350f 100%);
+}
+
+/* Card shapes */
+.shape1 {
+  border-radius: 40px 40px 12px 12px;
+}
+.shape2 {
+  border-radius: 12px 80px 12px 80px;
+}
+.shape3 {
+  border-radius: 100px 100px 0 0;
+}
+.shape4 {
+  border-radius: 80px 12px 80px 12px;
+}
+.shape5 {
+  border-radius: 20px 20px 100px 100px;
 }
 
 .cardContent {
@@ -114,6 +138,7 @@
   line-height: 1.6;
   margin-bottom: 16px;
   max-width: 300px;
+  text-align: justify;
 }
 
 .cardTags {
@@ -157,14 +182,7 @@
   color: var(--color-text-primary);
 }
 
-/* Scalloped bottom */
-.scallop {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
-}
+/* Scalloped bottom removed */
 
 /* Responsive */
 @media (max-width: 1024px) {

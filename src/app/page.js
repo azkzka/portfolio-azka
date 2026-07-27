@@ -162,7 +162,7 @@ export default function HomePage() {
               <svg className={styles.logoIcon} fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0L15.3 8.7L24 12L15.3 15.3L12 24L8.7 15.3L0 12L8.7 8.7Z" />
               </svg>
-              <span className={styles.logoText}>PORTFOLIO</span>
+              <span className={styles.logoText}>PORTOFOLIO</span>
             </div>
           </motion.div>
 
@@ -287,7 +287,7 @@ export default function HomePage() {
             transition={{ delay: 1.0, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className={styles.mobileBioText}>
-              Hi, I&apos;m Azka Fahsya. Fullstack Developer yang membangun web experiences berkualitas tinggi dengan perpaduan engineering dan kreativitas.
+              Hi, I&apos;m Azka Fahsya. Web Developer sekaligus ML Engineer yang mengimplementasikan model ML ke dalam aplikasi web yang skalabel dengan perpaduan engineering dan kreativitas.
             </p>
             <Link href="/contact" className={styles.mobileCta}>
               <span>GET IN TOUCH</span>
