@@ -33,21 +33,23 @@ const PROJECTS = [
   },
   {
     number: "04",
-    title: "E-Commerce Mobile App",
-    desc: "A sleek and responsive mobile application for seamless online shopping with integrated payment gateways.",
-    tags: ["React Native", "Node.js", "MongoDB", "Stripe"],
+    title: "Coming Soon",
+    desc: "Project details will be updated soon.",
+    tags: ["In Progress"],
     gradient: "gradient4",
     shape: "shape4",
     link: "#",
+    isPlaceholder: true,
   },
   {
     number: "05",
-    title: "AI Chat Assistant",
-    desc: "An intelligent conversational agent capable of context-aware interactions, powered by large language models.",
-    tags: ["OpenAI API", "Next.js", "Tailwind CSS", "Vercel"],
+    title: "Coming Soon",
+    desc: "Project details will be updated soon.",
+    tags: ["In Progress"],
     gradient: "gradient5",
     shape: "shape5",
     link: "#",
+    isPlaceholder: true,
   },
 ];
 
@@ -80,12 +82,18 @@ export default function ProjectsClient() {
                     <span key={tag} className={styles.tag}>{tag}</span>
                   ))}
                 </div>
-                <a href={project.link} className={styles.cardLink} target="_blank" rel="noopener noreferrer">
-                  View Project
-                  <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
+                {!project.isPlaceholder ? (
+                  <a href={project.link} className={styles.cardLink} target="_blank" rel="noopener noreferrer">
+                    View Project
+                    <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </a>
+                ) : (
+                  <span className={styles.cardLink} style={{ opacity: 0.6, cursor: "default" }}>
+                    Coming Soon
+                  </span>
+                )}
               </div>
             </div>
           </motion.div>

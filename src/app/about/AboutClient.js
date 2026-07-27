@@ -16,83 +16,70 @@ const EDUCATION = [
 const WORKING_EXPERIENCE = [
   {
     year: "Oct 2025 - Dec 2025",
-    title: "Ministry of Defence of the Republic of Indonesia",
-    subtitle: "Center of Data and Information internship",
+    title: "PT Sokka Tama Fiber (Persada Group)",
+    subtitle: "IT Programmer Internship",
     bullets: [
-      "Architected 'Mentari', a secure AI Orchestration system integrating Local LLMs with MCP Server, effectively automating complex administrative workflows via natural language prompts to drive a massive 45% surge in office operational efficiency",
-      "Engineered an end-to-end Twitter Sentiment Analysis pipeline leveraging NLP algorithms, transforming unstructured social media data into actionable strategic insight for real-time trend monitoring and decision-making efficiency.",
-      "Spearheaded and mentored a Data Team of 4 interns through the full project lifecycle, implementing strategic performance frameworks that accelerated talent growth and maximized KPI achievements across multiple high-impact initiatives."
+      "Architected and developed 'Insys', a scalable web-based correspondence management system utilizing Django Framework and PostgreSQL to streamline complex administrative workflows across multi-company scaling within Persada Group.",
+      "Engineered robust Role-Based Access Control (RBAC) across 3 hierarchical tiers (Admin, Staff, Approver) and integrated ReCAPTCHA v3 risk-scoring architecture, significantly reducing automated threat risks and enhancing corporate data security.",
+      "Spearheaded an automated approval workflow and a searchable digital archiving module with real-time tracking, eliminating manual company-selection bottlenecks and improving inter-departmental document retrieval speed."
     ]
   },
   {
-    year: "Jan 2025 - Aug 2025",
-    title: "KELAS BAGUS : Machine Learning & Python Practically",
-    subtitle: "Mentee AI Innovator",
+    year: "Feb 2025 - Jul 2025",
+    title: "DBS Foundation Coding Camp",
+    subtitle: "Machine Learning Cohort & Capstone Innovator",
     bullets: [
-      "Successfully led a team with four members to win 1st place in a hackathon with the project Sentiment Analysis for SDGs, applying machine learning for real-world impact.",
-      "Mastered the end-to-end data science workflow (Business Understanding → Data Preparation → Modeling → Deployment) for impactful project delivery.",
-      "Built and applied diverse machine learning models from Logistic Regression to deep learning (CNNs), bridging theory with hands-on practice."
-    ]
-  },
-  {
-    year: "Aug 2024 - Dec 2024",
-    title: "STARTUP CAMPUS : Artificial Intelligence",
-    subtitle: "Mentee AI Innovator",
-    bullets: [
-      "Successfully led a team to develop an AI-driven solution, including NutriLabel, an OCR-based nutritional labeling system enhancing food safety, which won 1st place in Startup Campus Hackathon Competition.",
-      "Skilled in deploying advanced Computer Vision (YOLOv5) and NLP models (BERT) for impactful, industry-relevant applications.",
-      "Developed robust supervised and unsupervised learning models, including classification, regression, and clustering that enhanced data-driven insights and predictive accuracy across complex datasets."
+      "Successfully co-developed 'LuminousSkin', an AI-powered diagnostic web platform designed to provide early skin disease detection and educational healthcare access for underserved (3T) regions in Indonesia, aligning with SDGs 3.3.",
+      "Mastered and applied deep learning workflow by implementing a Convolutional Neural Network (CNN) leveraging MobileNetV2 transfer learning; rigorously evaluated model performance using Precision, Recall, F1-Score, and ROC-AUC metrics.",
+      "Deployed real-time machine learning pipeline integrated seamlessly into the backend via FastAPI, enabling instantaneous image classification, educational output, and pharmacy mapping for end-users."
     ]
   }
 ];
 
-const LEADERSHIP_EXPERIENCE = [
+const ORGANIZATION_EXPERIENCE = [
   {
-    year: "Oct 2023 - Dec 2024",
-    title: "NOVOCLUB BY PT PARAGON",
-    subtitle: "Content Creator and Content Analyst",
+    year: "Aug 2024 - Aug 2025",
+    title: "Himpunan Mahasiswa Teknik Informatika (HIMATIF) UNKRIS",
+    subtitle: "Coordinator of Infokom",
     bullets: [
-      "Receive specialized training from Paragon over 4 weeks to become a true leader.",
-      "Successfully contributed to increasing participation 400%, from 35.000 to 178.000 attendees.",
-      "Executed 15 various events as content creator with cumulative 30 - 6000",
-      "Successfully completed a final project and attended 8 NovoClub Bootcamps, including sessions on Design Thinking, Time Management, SCAMPER Creating Innovation, Self Leadership, and Learning Work Culture at PT Paragon."
+      "Promoted to Division Coordinator after actively contributing as a media division member since Semester 2; spearheaded organizational publication strategies, digital branding, and communication workflows for the informatics student body.",
+      "Successfully managed and mentored division members in producing technical documentation, broadcast bulletins, and digital content, fostering a collaborative and structured media team during peak organizational periods."
     ]
   },
   {
-    year: "Mei 2024 - Aug 2024",
-    title: "INDORELAWAN",
-    subtitle: "Facilitator",
+    year: "Aug 2024 - Aug 2025",
+    title: "UKM Bulutangkis UNKRIS",
+    subtitle: "President (Ketua UKM)",
     bullets: [
-      "Selected as a Top Facilitator, recognized for delivering impactful learning experiences",
-      "Selected as lead facilitator, managing 4 community groups of total 60 members across different regions in Indonesia.",
-      "Successfully coordinated the collection and distribution of over 7,000 books to underserved communities.",
-      "Developed strong facilitation and mentoring skills through hands-on experience and training."
+      "Demonstrated executive leadership by overseeing university-wide athletic operations, managing organizational budgets, coordinating training programs, and leading member development initiatives.",
+      "Cultivated strong interpersonal communication, time management, and adaptability skills while balancing intensive academic engineering coursework and technical bootcamps with organizational leadership responsibilities."
     ]
   }
 ];
 
 const PROJECT_EXPERIENCE = [
   {
+    year: "2026",
+    title: "Shopee Fraud Detector",
+    subtitle: "Live Chrome Extension",
+    bullets: [
+      "Engineered and deployed a functional browser extension available on the Google Chrome Web Store, designed to analyze real-time transaction patterns and identify potential e-commerce fraud."
+    ]
+  },
+  {
     year: "2025",
-    title: "Mentari - AI Orchestration with MCP server",
+    title: "Insys",
+    subtitle: "Multi-Company Correspondence Management System",
     bullets: [
-      "A privacy-focused AI agent integrating local LLMs with MCP protocols to execute diverse administrative task as word, excel, and power point via a unified prompt interface"
+      "Developed an enterprise-grade web application utilizing Django and PostgreSQL, featuring automated approval workflows, RBAC, and secure digital archiving for Persada Group."
     ]
   },
   {
-    year: "2024",
-    title: "NutriLabel - AI Powered Nutrition Analysis",
-    subtitle: "Demo",
+    year: "2025",
+    title: "LuminousSkin",
+    subtitle: "AI-Powered Skin Disease Diagnostic Demo",
     bullets: [
-      "Secured 1st Place in sustainable AI showcase by developing a nutritional analyzer that leverages Paddle OCR and Singapore's grading algorithms for accurate health assessments"
-    ]
-  },
-  {
-    year: "2024",
-    title: "Green Trust - SDGs Sentiment Analysis",
-    subtitle: "Demo",
-    bullets: [
-      "Engineered an AI-driven sentiment analysis system on X to decode public discourse, empowering companies to align their CSR initiatives with real-time societal values and maximize community impact"
+      "Built an AI-driven web platform combining MobileNetV2, FastAPI, and React to decode skin disease symptoms in remote areas, empowering communities with accessible medical guidance and supporting SDGs 3.3."
     ]
   }
 ];
@@ -100,15 +87,15 @@ const PROJECT_EXPERIENCE = [
 const SKILLS = [
   {
     title: "Computer Skills",
-    desc: "Python, Machine Learning, Deep Learning, Excel, Excel Macros, PowerBI, Computer Vision, NLP."
+    desc: "Python, Django, Machine Learning, Deep Learning (CNNs), PostgreSQL, MySQL, FastAPI, HTML, CSS, JavaScript, Bootstrap, PowerBI, Git."
   },
   {
     title: "Soft Skills",
-    desc: "Professional Communication, Public Speaking, Emotional Intelligence, Interpersonal Communication, Empathy."
+    desc: "Professional Communication, Team Leadership, Analytical Problem Solving, Time Management, Adaptability, Public Speaking."
   },
   {
     title: "Language",
-    desc: "Indonesia, English"
+    desc: "Indonesia, English."
   }
 ];
 
@@ -147,7 +134,7 @@ export default function AboutClient() {
               Machine Learning and Web Development. I am skilled in building intelligent solutions and implementing ML models
               into scalable web applications. I have extensive experience in intensive technical training through Bootcamps,
               implementing award winning projects, and being active in various organizations.
-              I combine strong analytical rigor and software engineering principles to deliver scalable end-to-end technology solutions.
+              I combine strong analytical rigor and software engineering principles to deliver scalable end to end technology solutions.
             </p>
           </div>
           <div className={styles.signature}>Azka Fahsya</div>
@@ -232,9 +219,9 @@ export default function AboutClient() {
             ))}
           </div>
 
-          <h2 className={styles.experienceTitle} style={{ marginTop: '20px' }}>Leadership Experiences</h2>
+          <h2 className={styles.experienceTitle} style={{ marginTop: '20px' }}>Organization Experiences</h2>
           <div className={styles.timeline}>
-            {LEADERSHIP_EXPERIENCE.map((item, i) => (
+            {ORGANIZATION_EXPERIENCE.map((item, i) => (
               <div key={i} className={styles.timelineItem}>
                 <div className={styles.timelineYear}>{item.year}</div>
                 <div className={styles.timelineContent}>

@@ -32,7 +32,10 @@ export const metadata = {
   authors: [{ name: "Azka Fahsya" }],
   openGraph: {
     title: "Azka Fahsya — Fullstack Developer",
-    description: "Fullstack Developer yang membangun web experiences berkualitas tinggi.",
+    description: "Portofolio of Azka Fahsya — Fullstack Developer yang membangun web experiences berkualitas tinggi.",
+    url: "https://azkafahsya.my.id",
+    siteName: "Azka Fahsya Portfolio",
+    locale: "id_ID",
     type: "website",
   },
   icons: {

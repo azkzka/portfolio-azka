@@ -23,6 +23,7 @@
 /* Cards container */
 .cardsContainer {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
@@ -33,7 +34,8 @@
 /* Project card */
 .projectCard {
   position: relative;
-  flex: 1;
+  flex: 0 1 calc(33.333% - 16px);
+  min-width: 300px;
   max-width: 420px;
   height: 75vh;
   min-height: 500px;
